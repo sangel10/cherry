@@ -10,10 +10,10 @@
 
 	}
 	div, html, body, h1{
-	padding:0;
-	margin:0;
-	font-family: Matchbook;
-	background-color:#562252;
+		padding:0;
+		margin:0;
+		font-family: Matchbook;
+		background-color:#562252;
 	}
 	h1{
 		font-size: 100px
@@ -48,13 +48,39 @@
 	    padding:0;
 	    margin:0;
 	  }
+	  #twitter{
+	  	padding-left: 55px;
+	  }
 	  #share{
 	  	margin-bottom:2%;
 	  	height: auto;
+	  	/*padding-left: 2%;*/
 	  }
 	  #content{
 	  	margin-top: 5%
 	  }
+	  #download{
+	  	cursor: pointer;
+	  }
+	  #facebook{
+	  	/*padding-left: 10%;*/
+	  	padding-left: 183px;
+	  }
+	  #facebook, #twitter, #reddit{
+	  	margin:1%;
+	  }
+	  #reddit{
+	  	/*padding-right: 4%;*/
+	  }
+	  h2{
+	  	line-height: 60px;
+	  	margin-top:40px;
+	  	opacity: 0.8;
+	  }
+/*	  #share{
+	  	width:50%;
+	  	text-align: left;
+	  }*/
 	</style>
 
 </head>
@@ -76,11 +102,19 @@
 	<button id="download">Download</button>
 	<div id="share">
 
-            <iframe id="facebook" src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fget-cherry.com&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
+            
 
 	        <iframe id="twitter" allowtransparency="true" frameborder="0" scrolling="no"
 	        src="http://platform.twitter.com/widgets/tweet_button.html?url=http%3A%2F%2Fget-cherry.com&amp;count=horizontal&amp;text=I'm using Chrome Cherry Queue to organize my music"
 	        style="width:130px; height:20px;"></iframe>
+	       <br/>
+	    
+	        <a id="reddit" href="http://www.reddit.com/submit" onclick="window.location = 'http://www.reddit.com/submit?url=' + encodeURIComponent(window.location); return false"> <img src="http://www.reddit.com/static/spreddit7.gif" alt="submit to reddit" border="0" /> </a>
+
+	        <br/>
+	   
+	        <iframe id="facebook" src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fget-cherry.com&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
+
 	</div>
 
 
