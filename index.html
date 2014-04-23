@@ -1,5 +1,6 @@
 <html>
 <head><title>Get Chrome Cherry Queue!</title>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans"  type='text/css'>
 	<style>
 	@font-face { font-family: Matchbook; src: url('Matchbook.otf'); } 
 	/*@font-face { font-family: Exo2 ; src: url('Exo2.0-Regular.otf');}*/
@@ -13,14 +14,9 @@
 	div, html, body, h1{
 		padding:0;
 		margin:0;
-		font-family: Matchbook;
+		font-family:'Open Sans',sans-serif;
 		background-color:#562252;
-		font-family: 'Lucida Grande','sans-serif';
-		/*font-family: Exo2;*/
-		/*font-family: 'Open Sans', sans-serif;*/
-        /*font-style: normal 400;*/
-        /*font-size:62.5%; /* 1em=10px */*/
-        /*font-size: 1em;*/
+
 	}
 	h1{
 		font-size: 48px;
@@ -69,9 +65,11 @@
 		background-color: #EAD24B;
 	}
 	h2 {
-		font-size: 48px;
-		line-height: 60px;
-		font-size: 60px;
+
+		font-size: 20px;
+		letter-spacing: 0.6px;
+		line-height: 27px;
+
 		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";     /*Best for Internet Explorer 8 */
 		filter: alpha(opacity=60);    /*Internet Explorer 5, 6, 7, 8 */
 		-moz-opacity: 0.6;    /* Old Mozilla Browsers */
@@ -97,6 +95,14 @@
 	  }
 	  #download{
 	  	cursor: pointer;
+	  }
+	  #download span {
+	  	font-family:'Open Sans',sans-serif;
+	  	font-size: 28px; 
+	  	letter-spacing: 1px;
+	  	line-height: 35px;
+	  	margin-bottom: 20px;
+	  	display: inline-block;
 	  }
 	  #facebook{
 	  	/*padding-left: 10%;*/
@@ -135,7 +141,7 @@
 		Control your music from any page
 	</h2>
 
-	<button id="download">Download</button>
+	<button id="download"><span>Download</span></button>
 	<div id="share">
 
             
