@@ -1,5 +1,4 @@
-< script >
-    (function(i, s, o, g, r, a, m) {
+(function(i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;
     i[r] = i[r] || function() {
         (i[r].q = i[r].q || []).push(arguments)
@@ -13,5 +12,3 @@
 
 ga('create', 'UA-50397953-1', 'sangel10.github.io');
 ga('send', 'pageview');
-
-< /script>
