@@ -1,4 +1,5 @@
-(function(i, s, o, g, r, a, m) {
+< script >
+    (function(i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;
     i[r] = i[r] || function() {
         (i[r].q = i[r].q || []).push(arguments)
@@ -10,5 +11,7 @@
     m.parentNode.insertBefore(a, m)
 })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-ga('create', 'UA-50397953-1', 'get-cherry.com');
+ga('create', 'UA-50397953-1', 'sangel10.github.io');
 ga('send', 'pageview');
+
+< /script>
