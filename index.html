@@ -1,5 +1,11 @@
 <html>
-<head><title>Get Chrome Cherry Queue!</title>
+<head><title>Cherry for Chrome</title>
+
+	<link rel="icon" 
+      type="image/png" 
+      href="images/16px.png">
+
+
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans"  type='text/css'>
 	<style>
 	@font-face { font-family: Matchbook; src: url('Matchbook.otf'); } 
@@ -22,7 +28,7 @@
 		font-size: 48px;
 		font-size: 60px;
 		margin-top: 40px;
-		margin-bottom: 100px;
+		/*margin-bottom: 100px;*/
 		letter-spacing: 5px;
 	}
 /*	#section1, #section3{
@@ -119,10 +125,51 @@
 	  	margin-top:40px;
 	  	opacity: 0.8;
 	  }
+/*	  #youtube{
+	  	margin:10px 0 20px;
+	  }*/
 /*	  #share{
 	  	width:50%;
 	  	text-align: left;
 	  }*/
+
+.browser{
+	width:80%;
+	padding-left: auto;
+	display:none;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; 
+    height: 0; 
+    overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*padding-left:5%;*/
+    /*padding-top:7%;*/
+    /*margin:5%;*/
+}
+.after-video{
+	/*margin-top:10%;*/
+	height:auto;
+}
+
+.container-container{
+	width:75%;
+	padding-left: 12.5%;
+	height:auto;
+	padding-bottom:20px;
+}
 	</style>
 
 </head>
@@ -132,7 +179,7 @@
 	<img src="images/logo.png"/>
 	<h1>Make tracks not Tabs</h1>
 
-	<img src="images/browser.png"/>
+	<img class="browser" src="images/browser.png"/>
 	<h2>
 		All the videos and music you want to check out in one organized page
 		<br/>
@@ -141,6 +188,13 @@
 		Control your music from any page
 	</h2>
 
+<div class="container-container">
+<div class="video-container" id="video-container">
+<iframe id="youtube"  src="http://www.youtube.com/embed/9pETBctr9-M" enablejsapi="1" frameborder="0" allowfullscreen></iframe>
+
+</div>
+</div>
+<div class="after-video">
 	<button id="download"><span>Download</span></button>
 	<div id="share">
 
@@ -148,7 +202,7 @@
 
 	        <iframe id="twitter" allowtransparency="true" frameborder="0" scrolling="no"
 	        src="http://platform.twitter.com/widgets/tweet_button.html?url=http%3A%2F%2Fget-cherry.com&amp;count=horizontal&amp;text=I'm using Chrome Cherry Queue to organize my music"
-	        style="width:130px; height:20px;"></iframe>
+	        style="width:130px; height:20px;" ></iframe>
 	       <br/>
 	    
 	        <a id="reddit" href="http://www.reddit.com/submit" onclick="window.location = 'http://www.reddit.com/submit?url=' + encodeURIComponent(window.location); return false"> <img src="http://www.reddit.com/static/spreddit7.gif" alt="submit to reddit" border="0" /> </a>
@@ -164,7 +218,7 @@
 	</footer>
 	</div>
 
-
+</div>
 </div>
 
 <script src="mixpanel.js"></script>
@@ -180,6 +234,7 @@
     	mixpanel.track("Download from landing page")
     	window.open("http://feast.fm");
     	// alert("download clicked")
+
 })
 
 	</script>
